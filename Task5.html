@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        .body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #d5beea;
+    margin: 4;
+    padding: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.menu {
+    background-color: #d6f1c9;
+    box-shadow: 0 4px 8px rgba(187, 126, 214, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 80%;
+    max-width: 700px;
+    padding: 20px;
+    align-content: center;
+}
+
+.menu h1, .menu h2 {
+    text-align: center;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.menu-item img {
+    width: 150px;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.item-info {
+    flex: 1;
+}
+
+.item-info h3 {
+    margin: 0 0 10px;
+}
+
+.item-info p {
+    margin: 0 0 5px;
+}
+
+.price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #e91e63;
+}
+
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <h1>CHAKRI's Restaurant</h1>
+        <h2>Menu</h2>
+
+        <div class="menu-item">
+            <img src="https://t3.ftcdn.net/jpg/01/96/80/24/360_F_196802485_VQxk0qmyPGTq56rKYXGikVGApD3A7v5T.jpg" alt="image here">
+            <div class="item-info">
+                <h3>Bamboo Biryani</h3>
+                <p>today's special food</p>
+                <p class="price">Rs 300</p>
+            </div>
+        </div>
+        <ol>
+            <li>
+                Starters
+                <ol type="A">
+                    <li>
+                        veg
+                    </li>
+                    <ol type="a">
+                    <li>Cheeseballs</li>
+                    <li> Mushroom tikka.</li>
+                    <li> Veggie Kebab.</li>  
+                    <li>Panner fry</li>
+                    <li>Gobi Manchurian.</li> 
+                    </li>
+        </ol>
+        </ol>
+              
+                <ol type="A", start="2">
+                <li>
+                        Non-veg
+                </li>
+                    <ol type="a">
+                    <li>Lollipop</li>
+                    <li> chicken 555</li>
+                    <li>Mutton Kebab</li>  
+                    <li>Apollo fish</li>
+                    <li>Prawn fry</li> 
+                    </li>
+                    </ol>
+                </ol>
+    
+
+    </div>
+    <div class="menu">
+        <ol type="1" start="2">
+            <li>
+                Biryani
+                <ol type="A">
+                    <li>
+                        veg
+                    </li>
+                    <ol type="a">
+                    <li>Vegetable BIRYANI</li>
+                    <li> Mushroom BIRYANI</li>
+                    <li>Panner BIRYANI</li>  
+                    <li>Kaju BIRYANI</li>
+                    <li>Mixed veg BIRYANI</li> 
+                    </li>
+        </ol>
+        </ol>
+              
+                <ol type="A", start="2">
+                <li>
+                        Non-veg
+                </li>
+                    <ol type="a">
+                    <li>Chicken BIRYANI</li>
+                    <li>Mutton  BIRYANI</li>
+                    <li> Fish   BIRYANI</li>  
+                    <li>Prwan BIRYANI</li>
+                    <li>SPL Fry BIRYANI</li> 
+                    </li>
+                    </ol>
+                </ol>
+            </li>
+        </ol>
+    </div>
+    
+</body>
+</html>

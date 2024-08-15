@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback form</title>
+    <style>
+        .all{
+            margin-top: 40px;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin-left: 300px;
+            margin-right: 300px;
+            background-color: rgba(30, 117, 210, 0.331);
+        }
+        form{
+            margin-left: 60px;
+            margin-top: 40px;
+        }
+        h1{
+            margin-left: 270px;
+        }
+        p{
+            margin-left: 270px;
+            margin-top: -20px;
+        }
+        input{
+            border-radius: 5px;
+        }
+        #fname{
+            width: 200px;
+        }
+        #com{
+            margin-bottom: 10px;
+        }
+        .sub{
+            margin-left: 330px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: 1px solid black;
+            background-color: coral;
+            width: 120px;
+            height: 40px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body style="background-color: beige;">
+    <div class="all">
+    <form>
+    <h1>Course Evaluation</h1>
+    <p>Please provide some feedback about the course you look.</p><br><br>
+    <label for="fname"><b>Name:</b></label>
+    <input type="text" name="fname" id="fname"><br><br>
+    <label for="course"><b>Which course did you attend?</b></label>
+    <select name="course" id="course">
+        <option>Choose your course</option>
+        <option>Java</option>
+        <option>Python</option>
+        <option>C language</option>
+        <option>Data structures</option>
+        <option>DBMS</option>
+        <option>Web development</option>
+        <option>Cyber security</option>
+    </select><br><br>
+    <label for="instruct"><b>Which course did you attend?</b></label>
+    <select name="instruct" id="instruct">
+        <option>Choose your instructor</option>
+        <option>Shiva</option>
+        <option>Yogendra</option>
+        <option>Divya</option>
+        <option>Ramani</option>
+        <option>Prathima</option>
+        <option>Chengamma</option>
+        <option>Ashreetha</option>
+    </select><br><br>
+    <label for="rate"><b>Please rate the following:</b></label><br><br>
+    <label for="rate">Instructors attitude:
+    <input type="radio" name="rate" id="rate">Poor</label>
+    <label for="rate">
+    <input type="radio" name="rate" id="rate">Below average</label>
+    <label for="rate">
+    <input type="radio" name="rate" id="rate">Average</label>
+    <label for="rate">
+    <input type="radio" name="rate" id="rate">Good</label>
+    <label for="rate">
+    <input type="radio" name="rate" id="rate">Great</label><br><br>
+        <label for="d">Instruction methods:
+        <input type="radio" name="d" id="d">Poor</label>
+        <label for="d">
+        <input type="radio" name="d" id="d">Below average</label>
+        <label for="d">
+        <input type="radio" name="d" id="d">Average</label>
+        <label for="c">
+        <input type="radio" name="d" id="d">Good</label>
+        <label for="d">
+        <input type="radio" name="d" id="d">Great</label><br><br>
+            <label for="a">Course usefulness:
+            <input type="radio" name="a" id="a">Poor</label>
+            <label for="a">
+            <input type="radio" name="a" id="a">Below average</label>
+            <label for="a">
+            <input type="radio" name="a" id="a">Average</label>
+            <label for="a">
+            <input type="radio" name="a" id="a">Good</label>
+            <label for="a">
+            <input type="radio" name="a" id="a">Great</label><br><br>
+    <label for="com"><b>Additional comments:</b></label><br>
+    <textarea name="com" id="com" cols="35" rows="6"></textarea><br>
+    <input type="submit" class="sub">
+    </form>
+    </div>
+</body>
+</html>

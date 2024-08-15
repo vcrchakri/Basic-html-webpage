@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student registration</title>
+    <style>
+        .tot{
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 10px;
+            margin-left: 500px;
+            margin-right: 500px;
+            margin-top: 80px;
+            background-color: cornsilk;
+        }
+        form{
+            margin-left: 40px;
+        }
+        h2{
+            margin-top: -20px;
+            font-size: 18px;
+        }
+        input{
+            border-radius: 4px;
+        }
+        #sub{
+            margin-left: 50px;
+            width: 100px;
+            height: 30px;
+            border-radius: 20px;
+            cursor: pointer;
+            background-color: aquamarine;
+        }
+        body{
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="tot">
+    <form>
+    <h1>Mohan Babu University</h1>
+    <h2>Student registration form</h2><br>
+    <label for="image">Student image:</label>
+    <input type="file" name="image" id="image" accept="image/*"><br><br>
+    <label for="fname">Student Name:</label>
+    <input type="text" name="fname" id="fname"><br><br>
+    <label for="Father">Father Name:</label>
+    <input type="text" name="Father" id="Father"><br><br>
+    <label for="Mother">Mother Name:</label>
+    <input type="text" name="Mother" id="Mother"><br><br>
+    <label for="Gender">Gender:</label>
+    <label for="Gender">
+    <input type="radio" name="Gender" id="Gender">Male</label>
+    <label for="Gender">
+    <input type="radio" name="Gender" id="Gender">Female</label>
+    <label for="Gender">
+    <input type="radio" name="Gender" id="Gender">Other</label><br><br>
+    <label for="dob">Date of birth:</label>
+    <input type="date" id="dob"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email"><br><br>
+    <label for="level">Department:</label>
+    <select name="level" id="level">
+    <option value="s1">Select course</option>
+    <option value="s2">CSE</option>
+    <option value="s3">CSM</option>
+    <option value="s4">CSD</option>
+    <option value="s5">IT</option>
+    <option value="s6">ECE</option>
+    <option value="s7">MECH</option>
+    </select><br><br>
+    <label for="phone">Mobile number:</label>
+    <input type="number" name="phone"><br><br>
+    <label for="marks">Previous year marks:</label>
+    <input type="number" name="marks" id="marks"><br><br><br>
+    <input type="submit" id="sub">
+    </form>
+    </div>
+</body>
+</html>
