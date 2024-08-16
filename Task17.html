@@ -3,136 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Database</title>
+    <title>Movie Table</title>
     <style>
-        body{
-            display: flex;
-            margin: 20px;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-        }
-        table{
-            width: 100%;
-            max-width: 800px;
-            margin: 20px auto;
-            border-collapse: collapse;
-        }
-        th,td{
-            text-align: center;
-            font-size: 18px;
-            padding: 10px;
-            border: 1px solid #ddd;
-        }
-        th{
-            background-color: #f0f0f0;
-        }
-        @media screen and (max-width: 600px) {
-            table{
-                width: 100%;
-            }
-            th,td{
-                font-size: 14px;
-                padding: 5px;
-            }
-        }
-        @media screen and (max-width: 400px) {
-            th,td{
-                font-size: 12px;
-                padding: 2px;
-            }
-        }
+        body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #333;
+    color: #fff;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
     </style>
 </head>
 <body>
     <table>
-        <tr>
-            <th>Sl. No</th>
-            <th>Movie Name</th>
-            <th>Director</th>
-            <th>Cast</th>
-            <th>Poster</th>
-            <th>Trailer</th>
-        </tr>
-        <tr>
-            <td>1.</td>
-            <td>Pathaan</td>
-            <td>Siddharth Anand</td>
-            <td>Shah Rukh Khan, Deepika Padukone, John Abraham</td>
-            <td><img src="images/pathaan.jpg" alt="Poster" width="100"></td>
-            <td><iframe width="300" height="300" src="https://www.youtube.com/embed/vqu4z34wENw?si=sdIpzlfTp0kRomq0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
-        </tr>
-        <tr>
-            <td>2.</td>
-            <td>KGF</td>
-            <td>Prashanth Neel</td>
-            <td>Yash, Srinidhi Shetty, Anant Nag</td>
-            <td><img src="images/kgf.jpg" alt="Poster" width="100"></td>
-            <td><iframe width="300" height="300" src="https://www.youtube.com/embed/fnGW4iQzVLw?si=DeaT1Tkpo1j5xmPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
-        </tr>
-        <tr>
-            <td>3.</td>
-            <td>Bahubali</td>
-            <td>S.S. Rajamouli</td>
-            <td>Prabhas, Rana Daggubati, Anushka Shetty</td>
-            <td><img src="images/bahubali.jpg" alt="Poster" width="100"></td>
-            <td><iframe width="300" height="300" src="https://www.youtube.com/embed/sOEg_YZQsTI?si=CbbTzyM8sbdWnqOf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
-        </tr>
-        <tr>
-            <td>4.</td>
-            <td>Arjun Reddy</td>
-            <td>Sandeep Reddy Vanga</td>
-            <td>Vijay Deverakonda, Shalini Pandey, Rahul Ramakrishna</td>
-            <td><img src="images/arjun-reddy.png" alt="Poster" width="100"></td>
-            <td><iframe width="300" height="300" src="https://www.youtube.com/embed/aozErj9NqeE?si=VutGYQ1KmYou6hUq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
-        </tr>
-        <tr>
-            <td>5.</td>
-            <td>Pushpa</td>
-            <td>Sukumar</td>
-            <td>Allu Arjun, Rashmika Mandanna, Fahadh Faasil</td>
-            <td><img src="pushpa.jpeg" alt="Poster" width="100"></td>
-            <td><iframe width="300" height="300" src="https://www.youtube.com/embed/Q1NKMPhP8PY?si=R_6P1zZ_OvFBwm3T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
-        </tr>
-        <tr>
-            <td>6.</td>
-            <td>Ala Vaikuntapuramuloo</td>
-            <td>Trivikram Srinivas</td>
-            <td>Allu Arjun, Pooja Hegde, Tabu</td>
-            <td><img src="images/ala-vaikuntapuramu.jpeg" alt="Poster" width="100"></td>
-            <td><iframe width="300" height="300" src="https://www.youtube.com/embed/SkENAjfVoNI?si=04Q1u9ZAtRkcSutt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+        <thead>
             <tr>
-                <td>7.</td>
-                <td>Karthikeya 2</td>
-                <td>Chandoo Mondeti</td>
-                <td>Nikhil Siddharth, Anupama Parameswaran, Anupam Kher</td>
-                <td><img src="images/karthikeya2.jpeg" alt="Poster" width="100"></td>
-                <td><iframe width="300" height="300" src="https://www.youtube.com/embed/d5s_IGuOJEc?si=4kUtnyk-N7m1p6i0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                <th>S.No.</th>
+                <th>Movie Name</th>
+                <th>Trailer</th>
+                <th>Cast</th>
+                <th>Poster</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Inception</td>
+                <td><a href="https://www.youtube.com/watch?v=YoHD9XEInc0" target="_blank">Watch Trailer</a></td>
+                <td>Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page</td>
+                <td><img src=https://tse2.mm.bing.net/th?id=OIP.RCRnupwcrHyGvsHv3qiHEwHaJ4&pid=Api&P=0&h=180 alt="Inception Poster" width="100"></td>
+                <td>A thief who steals corporate secrets through dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.</td>
             </tr>
             <tr>
-                <td>8.</td>
-                <td>Oppenheimer</td>
-                <td>Christopher Nolan</td>
-                <td>Cillian Murphy, Emily Blunt, Matt Damon</td>
-                <td><img src="oppenheimer.jpg" alt="Poster" width="100"></td>
-                <td><iframe width="300" height="300" src="https://www.youtube.com/embed/ozHZDJ9uMHs?si=VQhzhlcunm2rXiJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                <td>2</td>
+                <td>The Matrix</td>
+                <td><a href="https://www.youtube.com/watch?v=vKQi3bBA1y8" target="_blank">Watch Trailer</a></td>
+                <td>Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss</td>
+                <td><img src=https://tse2.mm.bing.net/th?id=OIP.7NvXDgL9A53bPOyPIqw29gHaKD&pid=Api&P=0&h=180 alt="The Matrix Poster" width="100"></td>
+                <td>A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.</td>
             </tr>
             <tr>
-                <td>9.</td>
-                <td>Original Gangsters</td>
-                <td>Lars Jacobson</td>
-                <td>TBA</td>
-                <td><img src="images/og.jpg" alt="Poster" width="100"></td>
-                <td><iframe width="300" height="300" src="https://www.youtube.com/embed/ePOglweqy7o?si=bVuYGh-0HJTE9Rjd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                <td>3</td>
+                <td>The Dark Knight</td>
+                <td><a href="https://www.youtube.com/watch?v=EXeTwQWrcwY" target="_blank">Watch Trailer</a></td>
+                <td>Christian Bale, Heath Ledger, Aaron Eckhart</td>
+                <td><img src=https://tse2.mm.bing.net/th?id=OIP.HoHDhnYADlE00Qy1d6lhpQHaLH&pid=Api&P=0&h=180 alt="The Dark Knight Poster" width="100"></td>
+                <td>When the menace known as The Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham.</td>
             </tr>
             <tr>
-                <td>10.</td>
-                <td>Animal</td>
-                <td>Sandeep Reddy Vanga</td>
-                <td>Ranbir Kapoor, Anil Kapoor, Bobby Deol</td>
-                <td><img src="images/animal.jpg" alt="Poster" width="100"></td>
-                <td><iframe width="300" height="300" src="https://www.youtube.com/embed/OM6Sgf-Q4Ow?si=DGFSpx1-LmZtys3O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                <td>4</td>
+                <td>Interstellar</td>
+                <td><a href="https://www.youtube.com/watch?v=zSWdZVtXT7E" target="_blank">Watch Trailer</a></td>
+                <td>Matthew McConaughey, Anne Hathaway, Jessica Chastain</td>
+                <td><img src=https://tse2.mm.bing.net/th?id=OIP.8A707ygGKj_-MsgM-gOchgHaKe&pid=Api&P=0&h=180 alt="Interstellar Poster" width="100"></td>
+                <td>A team of explorers travels through a wormhole in space in an attempt to ensure humanity's survival.</td>
             </tr>
-        </table>
-    </body>
-    </html>
+            <tr>
+                <td>5</td>
+                <td>Gladiator</td>
+                <td><a href="https://www.youtube.com/watch?v=owK1qxDselE" target="_blank">Watch Trailer</a></td>
+                <td>Russell Crowe, Joaquin Phoenix, Connie Nielsen</td>
+                <td><img src=https://tse1.mm.bing.net/th?id=OIP.ss-Ux3xrVBVvNWOakIqVEgHaK-&pid=Api&P=0&h=180 alt="Gladiator Poster" width="100"></td>
+                <td>A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Avatar</td>
+                <td><a href="https://www.youtube.com/watch?v=5PSNL1qE6VY" target="_blank">Watch Trailer</a></td>
+                <td>Sam Worthington, Zoe Saldana, Sigourney Weaver</td>
+                <td><img src=https://tse1.mm.bing.net/th?id=OIP.-zw9igbeAplUdYqK8oRYJAHaJQ&pid=Api&P=0&h=180 alt="Avatar Poster" width="100"></td>
+                <td>A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>The Godfather</td>
+                <td><a href="https://www.youtube.com/watch?v=sY1S34973zA" target="_blank">Watch Trailer</a></td>
+                <td>Marlon Brando, Al Pacino, James Caan</td>
+                <td><img src=https://tse4.mm.bing.net/th?id=OIP.guOU4Dt_BqSLM5mzwbVlZQHaLH&pid=Api&P=0&h=180 alt="The Godfather Poster" width="100"></td>
+                <td>The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Baahubali: The Beginning</td>
+                <td><a href="https://www.youtube.com/watch?v=sOEg_YZQsTI" target="_blank">Watch Trailer</a></td>
+                <td>Prabhas, Rana Daggubati, Anushka Shetty</td>
+                <td><img src=https://tse3.mm.bing.net/th?id=OIP.nHxYnOna-KopRqWD5B2GUgAAAA&pid=Api&P=0&h=180 alt="Baahubali: The Beginning Poster" width="100"></td>
+                <td>In ancient India, an adventurous and daring man becomes involved in a decades-old feud between two warring peoples.</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>RRR</td>
+                <td><a href="https://www.youtube.com/watch?v=NgBoMJy386M" target="_blank">Watch Trailer</a></td>
+                <td>Ram Charan, N.T. Rama Rao Jr., Alia Bhatt</td>
+                <td><img src=https://tse3.mm.bing.net/th?id=OIP.MgQUlkAWtm6_DL-pSz-NnAHaLH&pid=Api&P=0&h=180 alt="RRR Poster" width="100"></td>
+                <td>A fictional story about two legendary revolutionaries and their journey away from home before they started fighting for their country in the 1920s.</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Pushpa: The Rise</td>
+                <td><a href="https://www.youtube.com/watch?v=Q1NKMPhP8PY" target="_blank">Watch Trailer</a></td>
+                <td>Allu Arjun, Fahadh Faasil, Rashmika Mandanna</td>
+                <td><img src=https://tse4.mm.bing.net/th?id=OIP.Am5ZoUfiJyWeYa4rRBh0lQHaLH&pid=Api&P=0&h=180 alt="Pushpa: The Rise Poster" width="100"></td>
+                <td>A labourer rises through the ranks of a smuggling syndicate, making some powerful enemies along the way.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
